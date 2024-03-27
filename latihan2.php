@@ -66,4 +66,53 @@ $nilai = 8; // Ubah nilai sesuai kebutuhan
 $status_nilai = ($nilai > 6) ? "Bagus" : "Tidak Bagus";
 echo "Nilai: $nilai<br>";
 echo "Status Nilai: $status_nilai";
+
+echo "<hr>";
+
+$baju= 'L'; //ukuran baju
+$baju = strtolower ($baju);
+switch ($baju)
+{
+    case "L";
+    case "l";
+        echo "Large";
+        break;
+    case "M" && "m";
+        echo "Medium";
+        break;
+    default;
+        echo "Small";    
+}
+echo "<hr>";
+
+//tugas 1 switchcase
+$nilai= 40;
+switch($nilai) {
+    case $nilai <=40 : 
+        echo "$nilai: Nilai Kurang";
+    break;
+    case $nilai <=70 : 
+        echo "$nilai: Nilai Cukup";
+    break;
+    default;
+      echo "null";
+}
+echo "<hr>";
+
+//tugas 2 switchcase
+$nilai2= 40;
+switch($nilai2) {
+    case $nilai2  >=0 && $nilai2 <35:
+        echo "$nilai: E";
+    break;
+    case $nilai2 >=35 && $nilai2 <=60: 
+        echo "$nilai2: D";
+    break;
+    default;
+      echo "null";
+}
+echo "<hr>";
+
+
 ?>
+
