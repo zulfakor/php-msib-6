@@ -117,7 +117,7 @@
             if ($total_belanja >= 100000) {
                 $diskon = 0.1 * $total_belanja;
             } elseif ($total_belanja >= 50000) {
-                $diskon = 0.05 * $total_belanja;
+                $diskon = 0.05 * $total_belanja; 
             }
 
             // Menghitung total setelah diskon
